@@ -1,0 +1,21 @@
+{
+  "name": "npm-project",
+  "version": "1.0.0",
+  "description": "The project for NPM packages studying.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'Проверка подключения.....ОК'",
+    "check": "prettier --check './src/**/*.{html,css,js}'",
+    "format": "prettier --write './src/**/*.{html,css,js}'",
+    "lint": "stylelint './src/**/*.css'",
+    "lintfix": "stylelint './src/**/*.css' --fix",
+    "checkAll": "npm run check && npm run lint",
+    "fixAll": "npm run format && npm run lintfix"
+  },
+  "author": "Sergey Balakhonov",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.9.6",
+    "stylelint": "^17.14.1"
+  }
+}
