@@ -82,7 +82,7 @@ function serve() {
     });
 }
 
-const build = gulp.series(clean, gulp.parallel(html, css, images));
+const build = gulp.series(clean, gulp.parallel(pug, css, images));
 const watchapp = gulp.parallel(build, watchFiles, serve);
 
 exports.html = html;
